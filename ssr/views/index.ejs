@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>News Site</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">World</a></li>
+                <li><a href="#">Politics</a></li>
+                <li><a href="#">Technology</a></li>
+                <li><a href="#">Entertainment</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <img src="<%= mainArticle.imgUrl%>"/>
+            <div>
+                <a href="1"><%= mainArticle.title%></a>
+                <p><%= mainArticle.subTitle%></p>
+            </div>
+        </article>
+        <div class="more-content">
+            <div class="articles">
+                <% for (let i = 0; i < moreArticles.length; i++) { %>
+                <article>
+                    <img src="<%= moreArticles[i].imgUrl %>"/>
+                    <div>
+                        <a href="<%= i+2 %>"><%= moreArticles[i].title%></a>
+                        <p><%= moreArticles[i].subTitle%></p>
+                    </div>
+                </article>
+                <% } %>
+            </div>
+            <div class="empty ads">
+                <img src="https://tpc.googlesyndication.com/simgad/5061404430180467095"/>
+                <img src="https://tpc.googlesyndication.com/simgad/15362592158382768539"/>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

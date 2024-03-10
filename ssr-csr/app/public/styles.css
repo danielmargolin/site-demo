@@ -1,0 +1,173 @@
+/* Reset default browser styles */
+@font-face {
+  font-family: "Moses";
+  src: url(https://ynet-pic1.yit.co.il/Common/images/fonts/moses/MosesText_1.0VF.ttf)
+    format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Moses";
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 0 60px;
+  position: fixed;
+  overflow-y: scroll;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav {
+  width: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: red;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+article {
+  margin-bottom: 20px;
+  display: flex;
+  font-size: 16px;
+}
+
+article img {
+  flex: 1;
+  width: 50%;
+  height: 300px;
+}
+
+article div {
+  direction: rtl;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: content-box;
+}
+
+article a {
+  margin-bottom: 10px;
+  font-size: 40px;
+  line-height: 46px;
+  letter-spacing: -0.4px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+main .more-content {
+  display: flex;
+}
+
+@media screen and (max-width: 780px) {
+  main .more-content {
+    flex-direction: column;
+  }
+  body main .more-content .articles {
+    width: 100%;
+  }
+  main .more-content .ads img {
+    width: 40%;
+    margin: 0 2.5%;
+  }
+  body article a {
+    font-size: 30px;
+    line-height: 33px;
+  }
+}
+
+.more-content .articles article:nth-of-type(2n) {
+  background-color: blue;
+}
+
+main .more-content .articles {
+  flex: 1;
+  width: 50%;
+}
+
+main .more-content .articles article {
+  flex: 1;
+  flex-direction: row-reverse;
+  background-color: red;
+  height: 120px;
+}
+
+main .more-content .articles article img {
+  width: 20%;
+  object-fit: cover;
+  height: 120px;
+}
+
+main .more-content .articles article div {
+  flex: 3;
+  padding: 10px;
+  color: white;
+  height: 80px;
+}
+
+main .more-content .articles article a {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+main .more-content .articles article p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+main .more-content .empty {
+  flex: 1;
+  display: flex;
+}
+
+main .more-content .ads img {
+  flex: 1;
+  margin-left: 15px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

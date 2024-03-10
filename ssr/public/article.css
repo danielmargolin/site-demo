@@ -1,0 +1,73 @@
+@font-face {
+    font-family: "Moses";
+    src: url(https://ynet-pic1.yit.co.il/Common/images/fonts/moses/MosesText_1.0VF.ttf) format("truetype");
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Moses';
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 0 60px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: red;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 10px 300px;
+}
+
+.article div {
+    display: flex;
+    direction: rtl;
+    flex-direction: column;
+}
+
+.article div a {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.content {
+    margin-top: 70px;
+    direction: rtl;
+    font-weight: 200;
+}
